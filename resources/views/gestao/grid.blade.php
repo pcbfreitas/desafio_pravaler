@@ -24,11 +24,11 @@
           <td>{{ $gestao->curso }}</td>
           <td>{{ $gestao->aluno }}</td>                
           <td>
-        <a href="{{ route('gestao.edit', ['id' => $gestao->id_aluno]) }}" class="btn btn-warning btn-sm">Editar/Excluir</a>
-        <form method="GET" action="" style="display: inline" onsubmit="return confirm('Deseja excluir/inativar este registro?');" >
-            @csrf
-            <input type="hidden" name="_method" value="delete" >           
-        </form>
+            <a href="{{ route('gestao.edit', ['id' => $gestao->id_aluno]) }}" class="btn btn-warning btn-sm">Editar/Excluir</a>
+            <form method="GET" action="" style="display: inline" onsubmit="return confirm('Deseja excluir/inativar este registro?');" >
+                @csrf
+                <input type="hidden" name="_method" value="delete" >           
+            </form>
           </td>
       </tr>
       @empty

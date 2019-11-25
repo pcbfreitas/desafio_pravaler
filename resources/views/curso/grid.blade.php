@@ -8,16 +8,14 @@
 <div class="container">
     <table class="table table-bordered table-striped table-sm">
         <thead>
-      <tr>
-          <th style="width: 5%">#</th>
-          <th>Instituição</th>
-          <th>Nome</th>
-          <th>Duração</th>
-          <th>Status</th>          
-          <th style="width: 20%">
-        <a href="{{ route('curso.create')}}" class="btn btn-info btn-sm" >Novo</a>
-          </th>
-      </tr>
+          <tr>
+              <th style="width: 5%">#</th>
+              <th>Instituição</th>
+              <th>Nome</th>
+              <th>Duração</th>
+              <th>Status</th>          
+              <th style="width: 20%"><a href="{{ route('curso.create')}}" class="btn btn-info btn-sm" >Novo</a></th>
+          </tr>
         </thead>
         <tbody>
       @forelse($curso as $curso)

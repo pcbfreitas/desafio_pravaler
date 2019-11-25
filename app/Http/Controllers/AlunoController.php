@@ -71,8 +71,7 @@ class AlunoController extends Controller
      */
     public function store(Request $request)
     {
-     //dd($request->all());
-     //exit();
+     
       $aluno = new alunos;
       $aluno->nome = $request->nome;
       $aluno->cpf = $request->cpf;      

@@ -11,8 +11,9 @@
 |
 */
 
-Route::get("/", "GestaoController@index")->name("gestao.index");
+//Rotas para gestão do Painel
 
+Route::get("/", "GestaoController@index")->name("gestao.index");
 Route::get("gestao", "GestaoController@index")->name("gestao.index");
 Route::get("gestao/edit/{id}", "GestaoController@edit")->name("gestao.edit");
 Route::post("gestao/update/{id}", "GestaoController@update")->name("gestao.update");
@@ -26,7 +27,6 @@ Route::get("instituicao/edit/{id}", "InstituicaoController@edit")->name("institu
 Route::post("instituicao/update/{id}", "InstituicaoController@update")->name("instituicao.update");
 Route::get("instituicao/destroy/{id}", "InstituicaoController@destroy")->name("instituicao.destroy");
 
-
 //Rotas para gestão dos Cursos
 
 Route::get("curso", "CursoController@index")->name("curso.index");
@@ -35,7 +35,6 @@ Route::post("curso/store", "CursoController@store")->name("curso.store");
 Route::get("curso/edit/{id}", "CursoController@edit")->name("curso.edit");
 Route::post("curso/update/{id}", "CursoController@update")->name("curso.update");
 Route::get("curso/destroy/{id}", "CursoController@destroy")->name("curso.destroy");
-
 
 //Rotas para gestão dos Alunos
 
